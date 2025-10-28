@@ -1,0 +1,84 @@
+Classes & Objects: 
+
+Topics: 
+What is Class ?
+What is an Object ?
+Declaring Classes
+Class Naming Conventions 
+Declaring Member Variables 
+What is a Constructor? 
+Usage of constructors in Java
+Types of Constructors
+Examples of Constructors (Default & Parameterized) 
+Constructor Overloading 
+Use of ‘this’ in Constructors 
+Use of ‘super’ in Constructors 
+Key points for this and super 
+
+class hocche blueprint, onek gula obj create kora jabey. 
+class theke toiri object jeitate onek features thake. 
+
+object: state & behavior thake 
+state: dog’s name, breed, color
+behavior: barking, fetching 
+
+class MyClass {
+	// field, constructor, and
+	// method declarations 
+}
+
+kono kisu mone nah ashle ami easily e sheita abar khuje paite parbo. so chill
+shobcheye smartly and efficiently complete korte hobe. 
+
+function/ method: verb 
+class name: noun 
+
+variables: fields/ member, local variable (method er vitor), parameters (method er parenthesis er moddhe define kore)
+arguments: jei value gula pathan hoy
+
+parameter vs arguments
+
+Constructor: special kind of method
+same name as the class, Animal, … Animal()  
+no return type, void use kora jabe nah 
+automatic invocation 
+
+variable er default value thake, class er member variable gular default value diye initialize hoy! 
+local variable initialize nah kora chara use korle compile error dey. 
+
+by default ekta no argument constructor thakbe. 
+constructor er moddhe method calling er practical kono kaaz ache naki? 
+
+Constructor Usage: 
+Initialization, variable initialization kore
+Guaranteed Execution, execute hobei
+Overloading, constructor overloading 
+Encapsulation 
+
+constructor overloading kora jay
+constructor overloading kora jay nah (parent-child)
+
+Types: 
+Default 
+Parameterized 
+
+Constructor Overloading: 
+… pdf … 
+
+this keyword: 
+refers to current object’s attributes. this.name
+calls another constructor of same class: this(0, 0) Random(int, int)
+
+super keyword: 
+refers to parent class’s constructor. super()
+refers super class’s features variables, method…
+
+java multiple inheritance support kore nah! 
+multiple interface support kore! 
+
+shob class object class k extend kore 
+
+super/ this should be first lines. 
+
+child class constructor er shurute parent constructor call kore dey. 
+
