@@ -1,0 +1,62 @@
+
+Topics:
+What is OOP? 
+Benefits of OOP 
+Four Pillars of OOP 
+What is Encapsulation 
+Purpose of Encapsulation 
+Implementing Encapsulation in Java 
+What are Getter and Setter in Java 
+Example of Encapsulation 
+Tips and Best Practices 
+Access Modifiers 
+What is Immutability 
+Examples in Java 
+How to Create Immutable Class 
+Example of Immutable Class 
+Why a class needed to be final for Immutability 
+Solution -> Use final 
+
+OOP: design/ pattern ta object related 
+object banaite class lagey! 
+
+object: state & behavior 
+
+procedural/ functional programming er language er example: c program 
+
+Benefits: 
+Modularity & Reusability 
+Scalability 
+Maintainability 
+Collaboration 
+
+DRY principal: Don’t Repeat Yourself 
+
+Pillars: 
+Encapsulation 
+Inheritance 
+Polymorphism
+Abstraction 
+
+Encapsulation: 
+
+variables and behaviors gulare protected kore illegal access nah korte pare. 
+
+Purpose: 
+Data Hiding  
+Increased Flexibility 
+Improved Maintainability 
+
+Java jevabe encapsulation ensure korce: 
+
+shob fields gula hobe private. setter dibo nah. setter dile bairer theke access korte pare. getters use korbo. getters and setters diye access korte dibo. 
+
+setters laglei setters use korbo 
+
+Naming convention: getVarName, setVarName 
+
+Tips & Best Practices: 
+Use Private Fields 
+Provide Access Methods 
+Validation Logic 
+Immutable Classes 
