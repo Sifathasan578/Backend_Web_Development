@@ -1,0 +1,126 @@
+// Question: 
+
+Perfect, Sifat ✅
+
+You’ve completed the **“Inheritance Fundamentals”** chapter — which covers everything from basic inheritance, types of inheritance, `extends`, `super`, private member access, to upcasting and downcasting.
+
+To **truly evaluate** whether you’ve mastered this chapter and are ready to move on to *Polymorphism*, here’s a single **comprehensive coding problem** that integrates *all key inheritance concepts* from your PDF.
+
+---
+
+## 🧩 **Comprehensive Practice Problem — “University Management System”**
+
+### 🎯 **Objective:**
+
+Design a Java program that demonstrates **single, multi-level, hierarchical inheritance**, **access modifiers**, and **upcasting/downcasting** concepts — all within one problem.
+
+---
+
+### 🏫 **Scenario:**
+
+You are asked to build a small *University Management System* using OOP and inheritance principles.
+
+---
+
+### 🔹 **Class Hierarchy:**
+
+1. **Class: Person (Superclass)**
+
+   * **Private fields:** `name`, `age`
+   * **Public methods:**
+
+     * Constructor to initialize the fields.
+     * `displayInfo()` → prints name and age.
+   * Use proper encapsulation (getters/setters if needed).
+
+2. **Class: Employee (extends Person)**
+
+   * **Protected field:** `salary`
+   * **Method:** `displayInfo()` (override the parent method to include salary).
+   * **Method:** `work()` → prints `"Employee is working."`
+
+3. **Class: Teacher (extends Employee)**
+
+   * **Field:** `subject`
+   * **Constructor:** Calls `super()` and initializes subject.
+   * **Method:** `displayInfo()` → override again to include subject.
+   * **Method:** `teach()` → prints `"Teaching <subject>"`
+
+4. **Class: Admin (extends Employee)**
+
+   * **Field:** `department`
+   * **Method:** `manage()` → prints `"Managing <department> department."`
+
+5. **Class: Student (extends Person)**
+
+   * **Private field:** `cgpa`
+   * **Constructor:** Initializes all attributes.
+   * **Method:** `displayInfo()` → overrides to show student info.
+   * **Method:** `study()` → prints `"Student <name> is studying."`
+
+---
+
+### 🧠 **Additional Requirements:**
+
+1. Demonstrate **single inheritance** (`Person → Student`).
+2. Demonstrate **multi-level inheritance** (`Person → Employee → Teacher`).
+3. Demonstrate **hierarchical inheritance** (`Employee → Teacher` and `Employee → Admin`).
+4. Demonstrate **upcasting**:
+
+   ```java
+   Person p = new Teacher("Sifat", 26, 50000, "OOP");
+   p.displayInfo(); // Should call Teacher’s version
+   ```
+5. Demonstrate **downcasting**:
+
+   ```java
+   Teacher t = (Teacher) p;
+   t.teach();
+   ```
+6. Show that **private members of Person** cannot be accessed directly in child classes.
+7. Use the **super keyword** in constructors to initialize parent fields.
+
+---
+
+### 💡 **Expected Output Example (depends on your print style):**
+
+```
+--- Upcasting Demo ---
+Name: Sifat
+Age: 26
+Salary: 50000.0
+Subject: OOP
+
+--- Downcasting Demo ---
+Teaching OOP
+
+--- Hierarchical Demo ---
+Managing Administration department.
+Student Rahim is studying.
+
+--- Private Access Demo ---
+Cannot access private field 'name' directly from subclass.
+```
+
+---
+
+### 🧾 **Evaluation Criteria (When You Submit Your Solution):**
+
+| Concept                    | Weight | What I’ll Check                             |
+| -------------------------- | ------ | ------------------------------------------- |
+| Inheritance structure      | 20%    | Proper class hierarchy (`extends`, `super`) |
+| Encapsulation              | 10%    | Use of private/protected fields and getters |
+| Method overriding          | 15%    | Correct use of `@Override`                  |
+| Upcasting & Downcasting    | 20%    | Demonstrated correctly                      |
+| Multi-level + Hierarchical | 15%    | Both structures implemented                 |
+| Access control             | 10%    | Correct handling of private/protected       |
+| Code readability           | 10%    | Clean formatting and naming                 |
+
+---
+
+When you’re ready, write your **complete Java code solution** for this “University Management System” and send it here.
+I’ll then:
+
+* Evaluate your design line by line 🧠
+* Give you a **percentage score** and detailed feedback
+* Tell you clearly if you’re ready to move on to **Polymorphism (next chapter)**
