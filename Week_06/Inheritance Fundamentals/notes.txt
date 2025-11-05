@@ -1,213 +1,94 @@
-// Pre Notes: 
+Inheritance Fundamentals 
 
-Quiz question! … … … problem 
-Got it ✅ Let’s go through each of these briefly but clearly, with examples so you can grasp them easily.
-
-1. What is Inheritance
-Inheritance is a mechanism where one class (child/subclass) acquires the properties and behaviors (fields and methods) of another class (parent/superclass).
-👉 Example:
-class Animal {
-    void eat() { System.out.println("Eating..."); }
-}
-
-class Dog extends Animal {
-    void bark() { System.out.println("Barking..."); }
-}
-
-Here, Dog inherits eat() from Animal.
-
-2. Superclass and Subclass
-Superclass (Parent class): The class whose properties are inherited.
+Table of Contents: 
+What is inheritance
+Superclass and Subclass 
+Why use inheritance 
+Implementing inheritance in java 
+The Java Platform Class Hierarchy 
+Types of Inheritance 
+Single Inheritance 
+Multiple Inheritance 
+Multi-level Inheritance 
+Hierarchical Inheritance 
+Hybrid Inheritance 
+Multiple Inheritance with Classes is NOT permitted in Java 
+Private Members in a Superclass 
+Type Casting in Java 
 
 
-Subclass (Child class): The class that inherits from the superclass.
+Inheritance: 
+… … 
+subclass inherit kore superclass theke
+reduce reusability 
 
+superclass and subclass
 
-👉 Example:
-class Vehicle { }   // Superclass
-class Car extends Vehicle { } // Subclass
+Why use inheritance? 
+code reusability 
+extensibility 
+maintainability 
+readability and organization 
+foundation for oop concepts
+method overriding 
+polymorphism er jonno ekta environment create kore dey 
 
+access modifiers recap 
 
-3. Why Use Inheritance
-Reusability of code.
+java platform class hierarchy: 
+all classes extends object class, provides: toString(), equals(), hashCode() 
 
+Implementing
 
-Cleaner, modular design.
+using extend
 
+fully qualified name?: class k direct acces korte hoy
+packagename.classname 
 
-Easier to maintain and extend.
-
-
-👉 Example:
- Instead of writing eat() in Dog, Cat, Cow, we write it once in Animal.
-
-4. Implementing Inheritance in Java
-We use the extends keyword.
-👉 Example:
-class Parent {
-    void display() { System.out.println("Hello from Parent"); }
-}
-
-class Child extends Parent {
-    void show() { System.out.println("Hello from Child"); }
-}
-
-
-5. The Java Platform Class Hierarchy
-At the top of Java’s hierarchy is the Object class. Every class implicitly extends Object.
- So all classes have methods like toString(), equals(), hashCode().
-👉 Example:
-class MyClass { } // actually extends Object by default
-
-
-6. Types of Inheritance
+Types: 
 Single Inheritance
-
-
-Multiple Inheritance (not allowed directly with classes)
-
-
+1 class 1 child 
+Multiple Inheritance 
+child inherits from multiple parent (java doesn’t support it)
 Multi-level Inheritance
+C extends B extends A, level kom better
+Hierarchical Inheritance, common
+B, C, D extends A
+Hybrid Inheritance 
+Multi-level + Hierarchical 
+or any other combinal … … 
 
+Multiple inheritance with classes is not permitted in java 
 
-Hierarchical Inheritance
+diamond structure
+B, C extends from A
+D extends from B, C
 
+deadlock howa jabe nah 
 
-Hybrid Inheritance
+solves with an interface where you can implement two classes!
 
+Type casting in java: 
+Upcasting Implicit Casting 
+Downcasting Explicit Casting 
 
+child = new child lekha jay
+child = new parent lekha jay 
+parent = new child lekha jabe nah 
 
-7. Single Inheritance
-One class inherits from one class.
-👉 Example:
-class A { }
-class B extends A { }
+➤ Upcasting (For polymorphism!)/ Is a relationship
+Converting a child class reference into a parent class reference.
+Happens automatically (implicit).
+It’s safe, because every child is-a parent.
+➤ Downcasting
+Converting a parent class reference back into a child class reference.
+Must be done manually (explicit cast).
+It’s risky, because not every parent is a child.
+If done incorrectly → ClassCastException at runtime. 
 
-
-8. Multiple Inheritance
-A class inherits from more than one class.
- 👉 Not supported with classes in Java (to avoid ambiguity), but possible with interfaces.
-interface A { void methodA(); }
-interface B { void methodB(); }
-
-class C implements A, B {
-    public void methodA() { System.out.println("A"); }
-    public void methodB() { System.out.println("B"); }
-}
-
-
-9. Multi-level Inheritance
-Inheritance across multiple levels.
-👉 Example:
-class A { }
-class B extends A { }
-class C extends B { }
-
-
-10. Hierarchical Inheritance
-Multiple classes inherit from the same parent.
-👉 Example:
-class Animal { }
-class Dog extends Animal { }
-class Cat extends Animal { }
-
-
-11. Hybrid Inheritance
-Combination of multiple types (like multi-level + hierarchical).
- 👉 Java does not support hybrid inheritance with classes, but you can achieve it with interfaces.
-
-12. Multiple inheritance with classes is NOT permitted in Java
-If Java allowed this:
-class A { void show() { System.out.println("A"); } }
-class B { void show() { System.out.println("B"); } }
-class C extends A, B { } // ❌ Error
-
-👉 This would cause ambiguity. That’s why interfaces are used instead.
-
-13. Private Members in a Superclass
-Private members are not inherited directly. They are only accessible within the superclass.
- But subclasses can access them via public/protected getters/setters.
-👉 Example:
-class Parent {
-    private int value = 10;
-    public int getValue() { return value; }
-}
-
-class Child extends Parent {
-    void print() {
-        // System.out.println(value); // ❌ Not allowed
-        System.out.println(getValue()); // ✅ Allowed
-    }
-}
-
-
-14. Type Casting in Java
-Upcasting: Casting subclass to superclass (safe, implicit).
-
-
-Downcasting: Casting superclass to subclass (explicit, can cause ClassCastException).
-
-
-👉 Example:
-class Animal { }
-class Dog extends Animal {
-    void bark() { System.out.println("Bark!"); }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Animal a = new Dog(); // Upcasting
-        // a.bark(); ❌ Not accessible
-
-        Dog d = (Dog) a; // Downcasting
-        d.bark();        // ✅ Bark!
-    }
-}
-
-
-Do you want me to also draw a diagram of the types of inheritance in Java so you can visualize it more clearly?
-
-Live: 
-
-default = package private 
-
-equals() 
-hashCode() 
-
-fully qualified name 
-
-packagename.classname
-
-toString: 
-
-OOP diamond problem! 
-
-Type casting 
-
-dynamic method dispatch = polymorphism 
-
-explicit type casting 
-implicit type casting 
-
-Upcasting 
-
-Parent b = new Child();
-
-Downcasting 
-Upcasting 
-
-factory method design pattern 
-
-super 
-super() 
-
-this 
-this() 
-
-SDLC 
-SOLID 
-
-
-// Live Notes: 
+upcasting mane parent er moddhe child boshan or child take parent e convert kora
+Animal animal = new Dog(); 
+“Dynamic Method Dispatch”
+Factory Method Design Pattern 
 
 
