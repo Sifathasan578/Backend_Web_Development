@@ -1,1 +1,107 @@
+How to make classes abstract?
+
+Table of Contents: 
+
+
+What is polymorphism
+Types of polymorphism
+Static Polymorphism
+Dynamic polymorphism 
+Tips and best practices for polymorphism 
+What is abstraction in oop 
+Abstraction in action 
+Implementing abstraction in java 
+Abstract class 
+Example of abstract class 
+Interfaces 
+Backward compatibility with default methods
+Abstract class vs Interface 
+Choosing between abstract class and interface 
+What contract means in interfaces 
+How interfaces solve multiple inheritance in java 
+Solution with interfaces 
+
+Factory Method Pattern 
+
+Abstraction/ Interface 
+
+definition 
+poly + morph
+
+Collections Framework: 
+List
+ArrayList 
+Hashmap
+List vs ArrayList: ArrayList list k extend kore, List parent, ArrayList child 
+
+return type matter kore override er shomoy 
+
+concurrent framework 
+
+… … … … … … 
+
+Upcasting: Child -> Parent
+Downcasting: Parent -> Child, Explicit 
+
+Java compile time ei PARSE korte pari oi particular class e ki ki ache or nei! 
+
+ArrayList: Concrete 
+List: Contract ?
+
+Another name of interface is contract 
+
+polymorphism er khetre override hote hobe, ta na hole return e kaz korbe nah 
+
+Types of Polymorphism: 
+Static or Compile-time polymorphism: Method Overloading
+Dynamic or runtime polymorphism: Method Overriding 
+
+Static Polymorphism: 
+shudhu compile time ei kaaz hoy
+…
+…
+
+same method name + different parameters (count, different type)
+overloading e return type change hoy, overriding er khetre hoy nah 
+
+Dynamic Polimorphism: 
+runtime 
+method overriding 
+inheritance: suparclass -> subclass 
+upcasting and dynamic method dispatch 
+
+Example: already practiced  
+
+Tips and Best Practices: 
+… … 
+
+## BroCode:: 
+
+Abstraction in OOP
+Hiding implementation details and showing only essential features 
+Abstract classes can’t be instantiated directly 
+Can contain abstract methods, must be implemented 
+Can contain concrete methods which are inherited 
+
+concrete?
+
+abstract class can have abstract methods which can be implemented by children classes! 
+
+Interfaces: 
+
+A blueprint for a class that specifies a set of abstract methods that implementing a classes must define
+Support multiple inheritance like behavior 
+
+Polymorphism: 
+
+poly: 
+morph:
+
+Objects can identify as other objects 
+Objects can be treated as objects of a common superclass 
+
+polymorphism can also work with interfaces
+
+Runtime polymorphism/ Dynamic polymorphism
+when the method that gets executed is decided at runtime based on the actual type of the object. 
 
