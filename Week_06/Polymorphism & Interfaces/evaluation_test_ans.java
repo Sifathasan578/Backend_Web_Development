@@ -59,12 +59,12 @@ public abstract class SmartDevice {
     abstract void powerOn(); // will be implemented later on child classes!
 
     void charge(int percent) {
-        batteryLevel += percent;
+        batteryLevel = Math.min(100, batteryLevel + percent);
     }
 
     void charge(int percent, boolean fastCharge) {
         if(fastCharge) {
-            batteryLevel += (percent + 10); // how to show it increases faster? by adding +1 each time!
+            batteryLevel = Math.min(100, batteryLevel + percent + 10); // how to show it increases faster? by adding +1 each time!
         }
         else {
             batteryLevel += percent;
@@ -126,16 +126,6 @@ public class Phone extends SmartDevice implements Connectable, Portable {
         System.out.println("Calling " + number + " right now!");
     }
 
-    @Override
-    public String getBrand() {
-        return super.getBrand();
-    }
-
-    @Override
-    public int getBatteryLevel() {
-        return super.getBatteryLevel();
-    }
-
     public String getNetworkName() {
         return this.networkName;
     }
@@ -164,16 +154,6 @@ public class Laptop extends SmartDevice implements Connectable{
         System.out.println("Coding in java");
     }
 
-    @Override
-    public String getBrand() {
-        return super.getBrand();
-    }
-
-    @Override
-    public int getBatteryLevel() {
-        return super.getBatteryLevel();
-    }
-
     public String getNetworkName() {
         return networkName;
     }
@@ -197,15 +177,5 @@ public class Smartwatch extends SmartDevice implements Portable {
 
     public void trackSteps(int steps) {
         System.out.println("Tracking " + steps + " steps!");
-    }
-
-    @Override
-    public String getBrand() {
-        return super.getBrand();
-    }
-
-    @Override
-    public int getBatteryLevel() {
-        return super.getBatteryLevel();
     }
 }
