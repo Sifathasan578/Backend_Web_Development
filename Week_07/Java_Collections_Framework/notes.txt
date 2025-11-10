@@ -1,0 +1,100 @@
+Table of Contents: 
+
+What is collections framework 
+Core interfaces in the collections framework 
+How it simplifies data handling 
+Traversing collections 
+Aggregate operations 
+For each construct 
+Iterators 
+Collections interface bulk operations 
+List interface 
+Common implementation classes of the list interface 
+ArrayList 
+ArrayList vs LinkedList 
+Set interface 
+Hashset
+LinkedHashSet 
+TreeSet 
+Map interface 
+HashMap 
+LinkedHashMap 
+TreeMap 
+Choosing the right collection in java 
+When to use map vs set 
+
+Collection Framework:
+interfaces provide kore
+interface contract rakhe then pore implement kore 
+jemon list interface, arraylist implementation of list 
+collection: object represents group of objects 
+collection framework: set of classes and interfaces … store, manipulate, and access groups of objects efficiently  
+
+Core interfaces: List, Set, Map
+Core classes: ArrayList, HashSet, HashMap, LinkedList 
+
+set = unique elements thake
+map = dictionary = key, value pair
+
+list kono data structure er moddhe pore? 
+dynamic array. size unmentioned. like vectors. 
+
+Benefits: 
+reduce programming effort 
+increases performance 
+provides interoperability 
+reduces the effort required to learn APIs 
+reduces the effort required to design and implement APIs
+foster software reuse 
+
+Traversing collections: 
+Aggregate operations (Streams)
+after jdk 8
+use streams + lambda expressions 
+non-mutative 
+… parallelized for performance 
+example for later 
+For each construct 
+easy to read 
+cannot remove elements inside loop 
+Iterators 
+step through elements one by one 
+methods: 
+hasNext()
+next() 
+remove()
+
+for(Iterable<String> it = list.iterator(); it.hasNext();) {
+            if(it.next().isEmpty()) {
+                it.remove(); // safe removal 
+            }
+        }
+
+shob shomoy check kore porer ghorer jonno. ejonno safe case. 
+iterator rarely kaze lage
+
+collection interface bulk operations: 
+containall
+addAll 
+removeAll
+…  … 
+
+List interface: 
+ordered 
+duplicates allowed 
+indexed access 
+dynamic size 
+ArrayList, LinkedList, Stack, Vector 
+ArrayList: 
+implements list, extends collection 
+…
+…
+
+class implements interface 
+interface extends interface 
+
+collections er vitore primitive use kora jay nah 
+add(1, element): ektu costly
+add(ele); easy O(1), last e boshay 
+
+
