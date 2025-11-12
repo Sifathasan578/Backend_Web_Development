@@ -1,5 +1,3 @@
-// Java Collections Framework
-
 Table of Contents: 
 
 What is collections framework 
@@ -95,8 +93,92 @@ implements list, extends collection
 class implements interface 
 interface extends interface 
 
+ArrayList: 
+
 collections er vitore primitive use kora jay nah 
 add(1, element): ektu costly
-add(ele); easy O(1), last e boshay 
+add(index), .remove(ele); easy O(1), last e boshay 
 
+
+.remove(ele); costly 
+.add(null) 
+
+
+string pool: recap 
+
+LinkedList: 
+doubly linked list … back pointer + node + next pointer
+last element null k point kore 
+nodes: data, reference to the next node  
+
+What benefit to use ArrayList instead of LinkedList? 
+index er through te access kora easier for ArrayList. linkedlist er khetre prothom theke traverse korte hobe! 
+
+Benefit of LinkedList: 
+3 size er ekta array te arekta element dhukaite chaile array size ta double hoy kintu linkedlist er khetre link gula delete kore notun link kore dey. khub faster. 
+Insertion and Deletion er khetre khub kazey dey 
+
+Set: 
+Duplicates rakhe nah 
+searching er khetre onek valo
+no guaranteed order of insertion 
+one null allowed 
+set hashtable data structure use kore 
+set implements: enumset, hashset, linkedhashset, treeset 
+an element exist or not can be achieved in O(1) 
+efficient search, insertion, deletion operations 
+
+
+
+HashSet: 
+implements set interface 
+does not maintain order
+duplicate allow nah
+one null allowed 
+uses hashMap internally 
+not thread safe, multiple threads accept korte gele exception khabe. 
+set hashtable use kore, oita hocche ekta array 
+
+LinkedHashSet: 
+Maintains the order of insertion
+stores unique
+faster iteration compared to hashset 
+allows null elements 
+
+TreeSet: 
+implements NavigableSet interface 
+does not allow duplicates, null values … 
+Stores unique elements in sorted order. Naturally or by using comparator 
+eita kore balanced binary search tree use kore kore or red black tree use kore kore 
+
+Map Interface 
+key value pair 
+keys are unique elements, values can be duplicates 
+in python it is called dictionaries 
+one null accepts 
+for thread safety there are features 
+
+HashMap: 
+implements map 
+… … 
+uses hashing internally for fast access, insertion, and deletion 
+allows one null key 
+insertion order maintain kore nah
+	
+LinkedHashMap: 
+stores unique key value pair 
+maintains insertion order
+allows one null key
+
+TreeMap: 
+sort kore key dhore 
+custom comparator use kore sorting ta kora jabey 
+implements map and navigableMap 
+no null keys allowed 
+allows multiple null values 
+navigation methods: higher, lower, ceiling, floor 
+
+Do further practice with collections 
+
+Choosing right collection in java
 
