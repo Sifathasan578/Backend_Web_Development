@@ -1,1 +1,119 @@
 
+Below is a **beginner-friendly, not time-consuming, but fully comprehensive** coding problem that covers **all core concepts** from your *Java Collections Framework* chapter:
+
+---
+
+# ✅ **Your Practice Problem (Covers: List, Set, Map, Iteration, Bulk Ops, HashSet, LinkedHashSet, TreeSet, HashMap, LinkedHashMap, TreeMap)**
+
+### **📌 Problem: “Student Data Organizer”**
+
+You will build a small system to store, organize, and analyze student names and marks using **Lists, Sets, and Maps**.
+
+---
+
+# **📝 Requirements**
+
+### **1. Create a `List<String>` of student names**
+
+* Add at least **5 names** (including **duplicates**).
+* Demonstrate:
+
+  * `add()`
+  * `get()`
+  * `remove()`
+  * for-each iteration
+  * iterator iteration
+
+---
+
+### **2. Convert this list into a `Set<String>`**
+
+Create:
+
+* a **HashSet**
+* a **LinkedHashSet**
+* a **TreeSet**
+
+Then print each to show:
+
+* HashSet → no order
+* LinkedHashSet → insertion order
+* TreeSet → sorted order
+
+---
+
+### **3. Create a `Map<String, Integer>` to store marks**
+
+* Use a **HashMap**
+* Add 5 student → mark entries
+* Update the mark of one student
+* Remove one entry
+* Access one specific key
+* Iterate using:
+
+  * `for-each entrySet()`
+  * `keySet()`
+  * `values()`
+
+---
+
+### **4. Convert the HashMap into:**
+
+* **LinkedHashMap** (to preserve insertion order)
+* **TreeMap** (to sort keys)
+
+Print both to show differences.
+
+---
+
+### **5. Demonstrate at least one bulk operation on List**
+
+Use any one:
+
+* `addAll()`
+* `containsAll()`
+* `removeAll()`
+* `retainAll()`
+* `clear()`
+
+---
+
+### **6. Use Streams (optional but good practice)**
+
+Example:
+Print all student names that start with `"A"`.
+
+---
+
+# 🎯 **Goal**
+
+This single problem tests:
+
+* ArrayList
+* LinkedList (optional: you may replace ArrayList)
+* HashSet / LinkedHashSet / TreeSet
+* HashMap / LinkedHashMap / TreeMap
+* Iteration types
+* Bulk operations
+* Streams
+* Ordering differences
+* Duplicate behavior
+
+---
+
+# 📌 **What you should submit**
+
+Send me **your full Java solution** (all code).
+Then I will:
+
+### ✔️ Evaluate correctness
+
+### ✔️ Check if you understood the core concepts
+
+### ✔️ Tell you whether you’re ready to move to the next chapter
+
+---
+
+# 🔍 Confidence: **High**
+
+Whenever you’re ready, share your solution.
