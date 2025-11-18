@@ -1,2 +1,37 @@
 Table of Contents: 
-1. mmm
+
+Generics: 
+the need for generics 
+what are generics 
+why use generics 
+generics types 
+raw types 
+generics methods 
+bounded type parameters 
+java stream 
+obtain a stream 
+different operations on streams 
+intermediate operations 
+important intermediate operations
+terminal operations 
+important terminal operations 
+lambda expressions 
+predicate 
+
+collections onek vast topic shob sesh hoy nai! 
+
+generics 
+
+
+list e duita different type data rakhle jhamela hobey 
+
+Integer i = (Integer) list.iterator.next(); (Down casting)
+
+auto boxing: 
+Integer i = 9; 
+
+unboxing: 
+ulta
+
+list.get(0) er bodole getFirst() or getLast() … 
+
