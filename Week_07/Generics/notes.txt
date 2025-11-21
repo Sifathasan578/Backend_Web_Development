@@ -33,5 +33,10 @@ Integer i = 9;
 unboxing: 
 ulta
 
+
+
+
+day 2
+
 list.get(0) er bodole getFirst() or getLast() … 
 
