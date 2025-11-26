@@ -41,3 +41,4 @@ day 2
 list.get(0) er bodole getFirst() or getLast() … 
 
 last_day!
+last_dayy
