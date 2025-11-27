@@ -1,4 +1,8 @@
-Table of Contents: 
+Upcasting & Downcasting
+Generics 
+Autoboxing and Unboxing
+
+Untitled document
 
 Generics: 
 the need for generics 
@@ -20,25 +24,55 @@ predicate
 
 collections onek vast topic shob sesh hoy nai! 
 
-generics 
+Generics: 
+angular bracket diye data type likhtam oitai generics 
+fix kore dicchi j only ei type er data dhukbe! 
+type-safe, reusable, flexible
+gives compile time error rather than runtime error!
+
+Iterator er bepargula last class e skip kora thik hoy nai! 
 
 
 list e duita different type data rakhle jhamela hobey 
 
-Integer i = (Integer) list.iterator.next(); (Down casting)
+Integer i = (Integer) list.iterator.next(); (Which casting? Down casting) 
+
+Upcasting & Downcasting
+Generics 
+Autoboxing and Unboxing
 
 auto boxing: 
 Integer i = 9; 
 
-unboxing: 
-ulta
-
-
-
-
-day 2
-
 list.get(0) er bodole getFirst() or getLast() … 
 
-last_day!
-last_dayy
+in upcasting child will behave like parent but in autoboxing primitive types will convert to wrapper classes! 
+
+
+Raw types: 
+
+notun ta puraton e boshaite dibe 
+puraton ta notun e boshaite dibe nah
+
+Generic Methods:
+generic primitive types support kore nah! 
+
+“After completing “theory1”, “theory2”, and project if I feel like there needs to be extra practice I will do it!”
+
+Java Streams: Untitled document
+iteration internally 
+
+two type of operations: 
+intermediate, multiple operations can be chained in a row
+terminal 
+
+parallel streams
+
+“Theory class flow er moddhe jaite thakbo ja bujhinah bujhe nibo but flow nosto kora jabey nah!”
+“Need to focus deeply, remember during IELTS listening eyes close technique”
+“coding examples gula run kore dekhte paro”
+“class er agey class er table of contents gula briefly jene rakhbo”
+
+predicate
+
+
