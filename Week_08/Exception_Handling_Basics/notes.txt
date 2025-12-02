@@ -1,1 +1,56 @@
+📚 Table of Contents: Exception Handling Basics
+Based on the structure of the provided document, here is a logical table of contents, focusing on the main topics covered:
+Overview of Errors and Exceptions 1
+The Catch or Specify Requirement 2
+What is Exception 3
+Flow of an exception (Problem Occurs -> Create Exception -> Throw Exception -> Handle Exception) 4
+Types of Exceptions 5
+Checked Exceptions 6
+Unchecked Exceptions 7
+What is Error 8
+Why Handle Java Exceptions? 9
+How Does JVM Handle an Exception? 10
+Exception Creation 11
+Throwing the Exception 12
+Searching for a Handler 13
+Handling or Default Termination 14
+Hierarchy of Java Exception Classes 15
+How does a Programmer handle an Exception? (Keywords: try, catch, throw, throws, finally) 16
+try block 17
+catch block 18
+Multiple Catch Blocks 19
+finally block 20
+throws keyword 21
+try-with-resources 22
+Union catch Blocks 23
+Creating Custom Exceptions 24
+Throwing Exceptions in Java 25
+Throwing an Exception (throw keyword) 26
+Declaring Exceptions (throws keyword) 27
+Exception Chaining 28
+Best Practices in Exception Handling 29
+
+
+started 3.41 
+ends 1.40
+
+15 mins course content overview
+2 hours no stopping concentrated watch 
+
+checked exception?
+
+Throw vs Throwable vs Throws
+
+catching er  shomoy subclass  gulare higher e  rakhte hobey!
+
+scanner inside try condition
+try with resources
+checked vs unchecked
+
+throws, kono ekta method bole dey ki ki exception throw korte pare. 
+
+how java handles exception
+custom exception
+exception chaining
+
 
