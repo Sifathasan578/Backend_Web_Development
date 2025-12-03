@@ -1,0 +1,52 @@
+Based on the content of the PDF file "Class-16: File I/O & Serialization"1, here is the expert table of contents:
+📚 Table of Contents: File I/O & Serialization
+I. Java I/O API Introduction
+Introducing the Java I/O API 2
+Purpose: Accessing information from the outside (Disks/File System, Network) 3
+Understanding File I/O in Java 4
+APIs Available (java.io and java.nio) 5
+Key Concepts (Streams, Buffers, and Channels) 6
+File Handling Classes in Java 7
+File 8
+FileReader & FileWriter 9
+BufferedReader & BufferedWriter 10
+FileInputStream & FileOutputStream 11
+RandomAccessFile 12
+Files (from java.nio.file) 13
+II. Java I/O Streams
+Java I/O Streams (Types of streams) 14
+Character Streams 15151515
+Key Abstract Classes (Reader, Writer) 16161616
+Character Streams Example (Reading with FileReader, Writing with FileWriter) 17171717
+Byte Streams 18181818
+Key Abstract Classes (InputStream, OutputStream) 19
+Byte Streams Example (Reading with InputStream and creating copy using OutputStream) 20
+III. File Manipulation
+Create a File in Java 21
+The File API in Java (Capabilities) 22
+Key Classes for File Creation (File, Files, FileOutputStream) 23
+Java NIO (New I/O) 24
+Key Features (Non-blocking I/O, Channels and Buffers) 25252525
+Using Files Class (Files.createFile() Method) 26
+The Java File Class 27
+FileOutputStream Class 28
+Reading a File in Java 29
+Different Ways to Read a File (Scanner, BufferedReader, FileReader, Files) 30
+Writing a File in Java 31
+APIs Available (FileOutputStream, FileWriter, Files.write()) 32
+IV. Serialization and Deserialization
+Serialization and Deserialization in Java 33
+What is Serialization? 34
+Why Use Serialization? (Data Persistence, Network Communication, Caching) 35
+How Does Serialization Work in Java? 36 (Serializable interface) 37
+What is Deserialization? 38
+Why Use Deserialization? (Retrieve Stored Data, Inter-Process Communication, Loading Cached Data) 39
+Best Practices and Considerations 40
+Use serialVersionUID 41
+Avoid Serialization of Sensitive Data 42
+Validate Input During Deserialization 43
+Performance Considerations (Alternatives like JSON, XML) 
+
+my start: 10.10 am
+
+
