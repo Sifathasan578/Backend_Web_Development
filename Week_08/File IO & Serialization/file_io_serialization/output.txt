@@ -1,0 +1,3 @@
+Hello, World!
+This is written using FileWriter.
+FileWriter handles characters and stores them in text files.

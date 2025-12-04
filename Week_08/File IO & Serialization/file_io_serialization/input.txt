@@ -1,0 +1,4 @@
+Hello Java!
+This is a test file.
+You are reading this text character by character.
+End of file.
