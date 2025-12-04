@@ -1,5 +1,7 @@
 Based on the content of the PDF file "Class-16: File I/O & Serialization"1, here is the expert table of contents:
+
 📚 Table of Contents: File I/O & Serialization
+
 I. Java I/O API Introduction
 Introducing the Java I/O API 2
 Purpose: Accessing information from the outside (Disks/File System, Network) 3
@@ -47,6 +49,16 @@ Avoid Serialization of Sensitive Data 42
 Validate Input During Deserialization 43
 Performance Considerations (Alternatives like JSON, XML) 
 
-my start: 10.10 am
+my start: 10.10 am (3  december)
+my start: 10/17 am 4 december
+
+
+video starts: 5.0
+video ends:1.40 
+file khub important 
+Wal, Right ahead log
+
+
+
 
 
